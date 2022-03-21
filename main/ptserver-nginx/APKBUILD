@@ -1,0 +1,29 @@
+# Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+# Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
+pkgname=ptserver-nginx
+pkgver=0.0.1
+pkgrel=0
+pkgdesc="Nginx configuration files for all my services under ptserver"
+url="https://git.sr.ht/~josegpt/ptserver-nginx"
+arch="noarch"
+license="BSD-2-Clause"
+depends="nginx"
+replaces="nginx"
+pkgusers="nginx"
+pkggroups="www-data"
+source="$pkgname-v$pkgver.tar.gz::https://git.sr.ht/~josegpt/ptserver-nginx/archive/main.tar.gz"
+builddir="$srcdir/$pkgname-main"
+install="$pkgname.pre-deinstall"
+options="$options !check"
+
+build() {
+	:
+}
+
+package() {
+	install -Dm644 nginx.conf "$pkgdir"/etc/nginx/nginx.conf
+}
+
+sha512sums="
+12fd0aba6902acee77eeecee2e378c675c852f8cc161e67cde69bcc504e69e8ef2b7f1d54269b09cf0f7f0e06e34da6935a46a92f752c4c1300a7b2fd48433b9  ptserver-nginx-v0.0.1.tar.gz
+"
