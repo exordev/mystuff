@@ -1,0 +1,48 @@
+# Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+# Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
+pkgname=josegpt.com
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="My personal website"
+url="https://git.sr.ht/~josegpt/josegpt.com"
+arch="all"
+license="MIT"
+makedepends="go"
+subpackages="$pkgname-openrc $pkgname-nginx:nginx:noarch"
+source="$pkgname-v$pkgver.tar.gz::https://git.sr.ht/~josegpt/josegpt.com/archive/v$pkgver.tar.gz
+	$pkgname-nginx.conf
+	$pkgname.initd
+	$pkgname.confd"
+builddir="$srcdir/$pkgname-v$pkgver"
+install="$pkgname.pre-install $pkgname.pre-deinstall"
+
+build() {
+	go build -v -o "$pkgname" cmd/josegpt/main.go
+}
+
+check() {
+	go test -v ./...
+}
+
+package() {
+	install -Dm755 "$pkgname" "$pkgdir"/usr/bin/"$pkgname"
+	install -Dm755 "$srcdir"/"$pkgname".initd \
+					"$pkgdir"/etc/init.d/"$pkgname"
+	install -Dm755 "$srcdir"/"$pkgname".confd \
+					"$pkgdir"/etc/conf.d/"$pkgname"
+}
+
+nginx() {
+	depends="ptserver-nginx ptserver-uacme"
+	pkgdesc="nginx configuration for $pkgname"
+	install -Dm644 "$srcdir/josegpt.com-nginx.conf" \
+					"$subpkgdir"/etc/nginx/http.d/josegpt.com.conf
+
+}
+
+sha512sums="
+1ad3de0122c5ff77fd5499bdc303bf28ba2c17347d8b316803a858fd0ac6cf127d4212cfceae89e9ad52140edba5137326bbeb53f1e5a3cac26fdf317d39fe84  josegpt.com-v1.0.0.tar.gz
+dcb018a8cb75f8efea5fa780fdac5d4eddbed88f80d870e7c51d8b7c54e3d856ee3f0f7f16f62eddde6ffe1381a7d8c0010f1f4caa803c0010eb340582fa6a3b  josegpt.com-nginx.conf
+deaf6af61edbbe7466fb3fd1f0169bbffeaf89cb1ef39ed664563d4ef8ae932390d046a39c36bec48854fa566d5fc201a2e44cd481a74f87d7312bc9035acd3f  josegpt.com.initd
+238f94e681815016b235d7c2ac3fce7a33cfcbe727d62442083ceb2380e738f9f3a9b23a9da77c8d1bb70ca19ade2e3303fe0ee14d829f5b748192365a6af8bf  josegpt.com.confd
+"
