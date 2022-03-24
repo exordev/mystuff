@@ -1,7 +1,7 @@
 # Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=ptserver-nginx
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=0
 pkgdesc="Nginx configuration files for all my services under ptserver"
 url="https://git.sr.ht/~josegpt/ptserver-nginx"
@@ -11,8 +11,7 @@ depends="nginx"
 replaces="nginx"
 pkgusers="nginx"
 pkggroups="www-data"
-source="$pkgname-v$pkgver.tar.gz::https://git.sr.ht/~josegpt/ptserver-nginx/archive/main.tar.gz"
-builddir="$srcdir/$pkgname-main"
+source="nginx.conf 80.conf 443.conf web.conf"
 install="$pkgname.pre-deinstall"
 options="$options !check"
 
@@ -22,8 +21,15 @@ build() {
 
 package() {
 	install -Dm644 nginx.conf "$pkgdir"/etc/nginx/nginx.conf
+	install -Dm644 80.conf "$pkgdir"/etc/nginx/partials.d/80.conf
+	install -Dm644 443.conf "$pkgdir"/etc/nginx/partials.d/443.conf
+	install -Dm644 web.conf "$pkgdir"/etc/nginx/partials.d/web.conf
+	install -dm750 -onginx -gwww-data "$pkgdir"/var/www
 }
 
 sha512sums="
-12fd0aba6902acee77eeecee2e378c675c852f8cc161e67cde69bcc504e69e8ef2b7f1d54269b09cf0f7f0e06e34da6935a46a92f752c4c1300a7b2fd48433b9  ptserver-nginx-v0.0.1.tar.gz
+9507dbbc8ef736d47cc00bc90b6097db546f8d8243e318da72c6bad1aaacaa9e596bdcd953f58b1100a50c20b1f36454d59f546ebf29a3b679933e42d1fadf6f  nginx.conf
+507c323c8477be5b2f69f81725f799550cb38798b67e29ebc3687242f62d4961e48d5d1d3e7a3ff04ad4a4b3ff35c9bd03cf2eba5e2d5f35e9a9903c10b620a0  80.conf
+2ce9e795633ac69de10568b40d91b6db916357dbb70a5a94bcd6bfab790581aef38f89d6eb6321233c70274c4f5b3d5aec9f9afcdf57925dea36111dfbfd4f5e  443.conf
+bbfe28d3ae6e5e9d7afddea40aa6fa0617e700f81adf62ede7294b9dd7b2189e909190bec494d43aba1a642d467283ff59253e86bd5d02901d7738ca6d99d51c  web.conf
 "
