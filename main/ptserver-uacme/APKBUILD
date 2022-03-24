@@ -1,7 +1,7 @@
 # Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=ptserver-uacme
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=0
 pkgdesc="Uacme configuration files for all my services under ptserver"
 url="https://git.sr.ht/~josegpt/aports"
@@ -9,7 +9,7 @@ arch="noarch"
 license="MIT"
 depends="uacme moreutils doas"
 pkgusers="uacme"
-pkggroups="uacme"
+pkggroups="uacme www-data"
 install="$pkgname.pre-install $pkgname.pre-deinstall"
 source="crontab doas.conf uacme-client uacme-client.conf"
 options="$options !check"
@@ -26,12 +26,12 @@ package() {
 	install -Dm644 -ouacme -guacme /dev/null "$pkgdir"/var/log/uacme-client.log
 	install -dm775 -ouacme -guacme "$pkgdir"/etc/ssl/uacme
 	install -dm770 -ouacme -guacme "$pkgdir"/etc/ssl/uacme/private
-	install -dm755 -ouacme -guacme "$pkgdir"/var/www/.well-known/acme-challenge
+	install -dm755 -ouacme -gwww-data "$pkgdir"/var/www/.well-known/acme-challenge
 }
 
 sha512sums="
 25891e4d6aa9f480eeb396a2f57afb1bb64e9c7854d72d01154b5984ae0b963ff9d3cf85af6b49084a201109c28958e483407e4134221ee37c5b7efc4cb333bf  crontab
 b1f65af8084a42c596f37d42eefa4f70a910f761d4f7ccf0ca514232c6062931cb8a4449d1259027af41a0ab1bce5fee0ba26dbe661f44048a83aad134af30e6  doas.conf
-aa9337c37ade91d09193a0cd8977c0a47d7808cb76c747efd4cf7963e896b9247ed264791ba8b510e069b46a1bca47243a603ad73b57878bfeb1bbae12ec033e  uacme-client
+e2150bc9351a8b841a4b88b2eba2475c82adef9509accb85e90f47050ad93f3933d83b80ae6f8fd1ed80b9aeee86450d5d567416986db6cb6238e24468143316  uacme-client
 d9dee18d5470b9095896008522e6e3002d9f6b33f95e2eafb15b54d682eb7a2957195771e4c585b9fadca08315bcdedd7284f8e149161dbe62dca86e6cb7d888  uacme-client.conf
 "

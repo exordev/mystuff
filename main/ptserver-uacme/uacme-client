@@ -7,6 +7,6 @@ uacme() {
 	/usr/bin/uacme -v -h /usr/share/uacme/uacme.sh issue $site $* || true
 }
 
-chmod -R g+rX /etc/ssl/uacme /etc/ssl/uacme/private
+chmod -R g+srX /etc/ssl/uacme /etc/ssl/uacme/private
 source /etc/uacme-client.conf
 doas nginx -s reload
