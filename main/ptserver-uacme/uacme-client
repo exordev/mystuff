@@ -1,0 +1,12 @@
+#!/bin/sh -e
+exec >>/var/log/uacme-client.log 2>&1
+
+uacme() {
+	site=$1
+	shift
+	/usr/bin/uacme -v -h /usr/share/uacme/uacme.sh issue $site $* || true
+}
+
+chmod -R g+rX /etc/ssl/uacme /etc/ssl/uacme/private
+source /etc/uacme-client.conf
+doas nginx -s reload
