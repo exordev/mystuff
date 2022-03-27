@@ -2,7 +2,7 @@
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=ratpoison
 pkgver=1.4.9
-pkgrel=0
+pkgrel=2
 pkgdesc="Minimalistic window manager"
 url="http://ratpoison.nongnu.org"
 arch="all"
