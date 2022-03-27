@@ -1,7 +1,8 @@
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 # Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+_date="$(date +"%Y%m%d")"
 pkgname=emacs
-pkgver=29.0.50
+pkgver=29.0.50.$_date
 pkgrel=0
 pkgdesc="The extensible, customizable, self-documenting real-time display editor"
 arch="all"
@@ -13,7 +14,7 @@ makedepends="autoconf texinfo automake linux-headers gawk ncurses-dev
 	alsa-lib-dev libxml2-dev pango-dev tiff-dev libjpeg-turbo-dev
 	libwebp-dev libxaw-dev libgccjit-dev"
 subpackages="$pkgname-doc"
-source="https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-master.tar.gz"
+source="$pkgname-$_date.tar.gz::https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-master.tar.gz"
 builddir="$srcdir/$pkgname-master"
 
 prepare() {
@@ -82,5 +83,5 @@ doc() {
 }
 
 sha512sums="
-0fd226f1d1b6f5ad3412ea09155391f9655ff257e31ea69a8d33244ded3799c055fa6a088bd63f13404a244c35bd069fc1faa8cd7d7b196b414004af8dd20f04  emacs-master.tar.gz
+9e8594b8a003b19af811112d36415552f2f6fcf46a11d29f18fbde9d2b8977d362a02f42002a203073ad86244179ff0960401e9f02e7947cfd5183fed341c15f  emacs-20220327.tar.gz
 "
