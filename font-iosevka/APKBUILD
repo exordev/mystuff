@@ -1,0 +1,22 @@
+# Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+# Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
+pkgname=font-iosevka
+pkgver=15.1.0
+pkgrel=0
+pkgdesc="Versatile typeface for code, from code."
+url="https://typeof.net/Iosevka/"
+arch="noarch"
+options="!check" # no testsuite
+license="OFL-1.1"
+depends="fontconfig"
+source="https://github.com/be5invis/Iosevka/releases/download/v$pkgver/super-ttc-iosevka-$pkgver.zip"
+builddir="$srcdir/"
+
+package() {
+	mkdir -p "$pkgdir"/usr/share/fonts/TTC
+	mv "$builddir"/*.ttc "$pkgdir"/usr/share/fonts/TTC
+}
+
+sha512sums="
+05b48aa504ec73bfa8110a28f145edb18afac3f4ac2071294c9c83f1d06c0fcc73022d3203697653422da72d0713f2309dfd22b4187cf455de31976a89b6692f  super-ttc-iosevka-15.1.0.zip
+"
