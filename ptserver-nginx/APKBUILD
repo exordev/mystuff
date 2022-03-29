@@ -1,7 +1,7 @@
 # Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=ptserver-nginx
-pkgver=0.0.2
+pkgver=0.0.3
 pkgrel=0
 pkgdesc="Nginx configuration files for all my services under ptserver"
 url="https://git.sr.ht/~josegpt/ptserver-nginx"
@@ -25,6 +25,7 @@ package() {
 	install -Dm644 443.conf "$pkgdir"/etc/nginx/partials.d/443.conf
 	install -Dm644 web.conf "$pkgdir"/etc/nginx/partials.d/web.conf
 	install -dm750 -onginx -gwww-data "$pkgdir"/var/www
+	install -dm 750 -onginx -gwww-data "$pkgdir"/var/www/static
 }
 
 sha512sums="
