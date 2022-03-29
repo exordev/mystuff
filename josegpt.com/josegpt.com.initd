@@ -3,12 +3,12 @@ name="josegpt.com"
 description="My personal website service"
 supervisor=supervise-daemon
 JOSEGPT_USER=${JOSEGPT_USER:-josegpt.com}
-JOSEGPT_BIND=${JOSEGPT_BIND:-:5000}
+JOSEGPT_PORT=${JOSEGPT_PORT:-:5000}
 JOSEGPT_ARGS=${JOSEGPT_ARGS:-}
 LOGS=/var/log/josegpt.com.log
 supervise_daemon_args="-1 $LOGS -2 $LOGS"
 command="/usr/bin/$name"
-command_args="$JOSEGPT_ARGS"
+command_args="-port $JOSEGPT_PORT $JOSEGPT_ARGS"
 command_user="$JOSEGPT_USER:$JOSEGPT_USER"
 pidfile="/run/${RC_SVCNAME}.pid"
 

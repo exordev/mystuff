@@ -1,7 +1,7 @@
 # Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=josegpt.com
-pkgver=1.0.0
+pkgver=1.0.2
 pkgrel=0
 pkgdesc="My personal website"
 url="https://git.sr.ht/~josegpt/josegpt.com"
@@ -26,23 +26,24 @@ check() {
 
 package() {
 	install -Dm755 "$pkgname" "$pkgdir"/usr/bin/"$pkgname"
-	install -Dm755 "$srcdir"/"$pkgname".initd \
-					"$pkgdir"/etc/init.d/"$pkgname"
-	install -Dm755 "$srcdir"/"$pkgname".confd \
-					"$pkgdir"/etc/conf.d/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".initd \
+			"$pkgdir"/etc/init.d/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".confd \
+			"$pkgdir"/etc/conf.d/"$pkgname"
+	install -dm750 "$pkgdir"/var/www/static/josegpt.com
+	cp -R static/* "$pkgdir"/var/www/static/josegpt.com
 }
 
 nginx() {
 	depends="ptserver-nginx ptserver-uacme"
 	pkgdesc="nginx configuration for $pkgname"
 	install -Dm644 "$srcdir/josegpt.com-nginx.conf" \
-					"$subpkgdir"/etc/nginx/http.d/josegpt.com.conf
-
+			"$subpkgdir"/etc/nginx/http.d/josegpt.com.conf
 }
 
 sha512sums="
-1ad3de0122c5ff77fd5499bdc303bf28ba2c17347d8b316803a858fd0ac6cf127d4212cfceae89e9ad52140edba5137326bbeb53f1e5a3cac26fdf317d39fe84  josegpt.com-v1.0.0.tar.gz
-dcb018a8cb75f8efea5fa780fdac5d4eddbed88f80d870e7c51d8b7c54e3d856ee3f0f7f16f62eddde6ffe1381a7d8c0010f1f4caa803c0010eb340582fa6a3b  josegpt.com-nginx.conf
-deaf6af61edbbe7466fb3fd1f0169bbffeaf89cb1ef39ed664563d4ef8ae932390d046a39c36bec48854fa566d5fc201a2e44cd481a74f87d7312bc9035acd3f  josegpt.com.initd
-238f94e681815016b235d7c2ac3fce7a33cfcbe727d62442083ceb2380e738f9f3a9b23a9da77c8d1bb70ca19ade2e3303fe0ee14d829f5b748192365a6af8bf  josegpt.com.confd
+ebdb6880c72067eaef2e57065af29f4026fc88a64e115287d18f1b10b365fe9d5a80603151ea372c6577cabeeede697aa8516aa689b7310e1fdda387ac5a2904  josegpt.com-v1.0.2.tar.gz
+63bd9e2560d68c1ae37de7ab54615fdf6aee4109cb756ea674562e6dc30c129bd19ed908ccc468be8424753cfe42dbc7251efa12d08ee7363b3720ccb4c93003  josegpt.com-nginx.conf
+01a94b0ffa4dc6d4a82420b4cc6cad6f437c1a57fe83de034884c9bafea9d1e562e0cddc0a47f2fe0e57ce7168d5adecf3630d8b0028592fb3825d734de41076  josegpt.com.initd
+334a234a514bfe3ca7173555da20526e065457f57b899588237c819139f2827c149d60fd7c0ff4e43254380244b40ae5b7f01fdc2a8e0735ef0681bb6c0f7bfa  josegpt.com.confd
 "

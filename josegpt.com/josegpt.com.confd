@@ -1,8 +1,8 @@
 # Run the daemon as this user:
 # JOSEGPT_USER=josegpt.com
 
-# Bind the API service to this address:
-# JOSEGPT_BIND=:5000
+# Bind the webserver to this address:
+# JOSEGPT_PORT=:5000
 
 # Extra arguments
 # JOSEGPT_ARGS=
