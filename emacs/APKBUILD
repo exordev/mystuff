@@ -12,7 +12,7 @@ makedepends="autoconf texinfo automake linux-headers gawk ncurses-dev
 	ncurses-libs gnutls-dev gmp-dev jansson-dev harfbuzz-dev glib-dev
 	fontconfig-dev libpng-dev librsvg-dev giflib-dev libxpm-dev
 	alsa-lib-dev libxml2-dev pango-dev tiff-dev libjpeg-turbo-dev
-	libwebp-dev libxaw-dev libgccjit-dev"
+	libwebp-dev gtk+3.0-dev webkit2gtk"
 subpackages="$pkgname-doc"
 source="$pkgname-$_date.tar.gz::https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-master.tar.gz"
 builddir="$srcdir/$pkgname-master"
@@ -41,8 +41,8 @@ prepare() {
 		--with-harfbuzz \
 		--with-json \
 		--with-webp \
-		--with-native-compilation \
-		--with-x-toolkit=lucid \
+		--with-pgtk \
+		--with-xwidget \
 		--with-xft \
 		--with-jpeg=yes \
 		--with-tiff=yes \
@@ -83,5 +83,5 @@ doc() {
 }
 
 sha512sums="
-3a1ed55c1590c816723aa123a78c3b9e07d1e738673d2ffdb8cff76856b99602071ebcc0e3f1ce55aa45ee595f3c45308a9f68bafc72768be3b00d0f45c6d6a1  emacs-20220328.tar.gz
+841e2d1827cc2a0832cac640c47c875bce95b93f22ece2a6535680b5f49634202093c00b561f6b8f5ce4fffe0d2f7d85a653037a0ff1d4b7c8dbcf1554cdf9de  emacs-20220329.tar.gz
 "
