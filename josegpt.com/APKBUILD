@@ -2,7 +2,7 @@
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=josegpt.com
 pkgver=1.0.2
-pkgrel=0
+pkgrel=1
 pkgdesc="My personal website"
 url="https://git.sr.ht/~josegpt/josegpt.com"
 arch="all"
@@ -30,7 +30,7 @@ package() {
 			"$pkgdir"/etc/init.d/"$pkgname"
 	install -Dm750 "$srcdir"/"$pkgname".confd \
 			"$pkgdir"/etc/conf.d/"$pkgname"
-	install -dm750 "$pkgdir"/var/www/static/josegpt.com
+	install -dm750 -onginx -gwww-data "$pkgdir"/var/www/static/josegpt.com
 	cp -R static/* "$pkgdir"/var/www/static/josegpt.com
 }
 
@@ -44,6 +44,6 @@ nginx() {
 sha512sums="
 ebdb6880c72067eaef2e57065af29f4026fc88a64e115287d18f1b10b365fe9d5a80603151ea372c6577cabeeede697aa8516aa689b7310e1fdda387ac5a2904  josegpt.com-v1.0.2.tar.gz
 63bd9e2560d68c1ae37de7ab54615fdf6aee4109cb756ea674562e6dc30c129bd19ed908ccc468be8424753cfe42dbc7251efa12d08ee7363b3720ccb4c93003  josegpt.com-nginx.conf
-01a94b0ffa4dc6d4a82420b4cc6cad6f437c1a57fe83de034884c9bafea9d1e562e0cddc0a47f2fe0e57ce7168d5adecf3630d8b0028592fb3825d734de41076  josegpt.com.initd
-334a234a514bfe3ca7173555da20526e065457f57b899588237c819139f2827c149d60fd7c0ff4e43254380244b40ae5b7f01fdc2a8e0735ef0681bb6c0f7bfa  josegpt.com.confd
+10d4edd007c81a8192e487bdcefb5a88ab2602f5ca0338434276b6e86d4ef812931f1a482b21c98bffed765a59731161092b5e0f5210be1b156e5495a698ef5b  josegpt.com.initd
+5464c6f0ef073df41cf420e7419be15aa1b8aec8fd23664c2a0b03f4b8bbd531d65c7e305107e3ae7149713e7c595bb512afeab7cd25785871daf6c7e6e6d53f  josegpt.com.confd
 "

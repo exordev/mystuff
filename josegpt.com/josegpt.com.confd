@@ -2,7 +2,7 @@
 # JOSEGPT_USER=josegpt.com
 
 # Bind the webserver to this address:
-# JOSEGPT_PORT=:5000
+# JOSEGPT_PORT=5000
 
 # Extra arguments
 # JOSEGPT_ARGS=
