@@ -1,8 +1,8 @@
 # Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
 # Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
 pkgname=josegpt.com
-pkgver=1.0.2
-pkgrel=2
+pkgver=1.0.3
+pkgrel=0
 pkgdesc="My personal website"
 url="https://git.sr.ht/~josegpt/josegpt.com"
 arch="all"
@@ -42,8 +42,8 @@ nginx() {
 }
 
 sha512sums="
-ebdb6880c72067eaef2e57065af29f4026fc88a64e115287d18f1b10b365fe9d5a80603151ea372c6577cabeeede697aa8516aa689b7310e1fdda387ac5a2904  josegpt.com-v1.0.2.tar.gz
-eca0b4a0ad159a2049fe1bfd032ea171c5908dd38640d3b38dcb3e54667dab7181f902fb8f21f83271b82064ca281985e02ef043268ba1c62da9c1c01aeed248  josegpt.com-nginx.conf
-10d4edd007c81a8192e487bdcefb5a88ab2602f5ca0338434276b6e86d4ef812931f1a482b21c98bffed765a59731161092b5e0f5210be1b156e5495a698ef5b  josegpt.com.initd
-5464c6f0ef073df41cf420e7419be15aa1b8aec8fd23664c2a0b03f4b8bbd531d65c7e305107e3ae7149713e7c595bb512afeab7cd25785871daf6c7e6e6d53f  josegpt.com.confd
+1f3423a2e6dd59b52bae24707ac77f8dac69ba5b7633b0c66a74fbbc9933483ae4a1a11e0ca36d234d2f5e8a321c189923c2bb647da066412ce787b5e368ee20  josegpt.com-v1.0.3.tar.gz
+111cbe0f9f81d12a932d0bf6df975ffbdaf61a9919dbce62941138f5273bff451660ed22c1debb1fd5eecb007951e9438db9b4721aa33147fbd61bd241f0b3b4  josegpt.com-nginx.conf
+5447331e7e8ab508b3dcb009f1458441baf9273f469be7dfe675d61a178e1b2a966d055ac09d60e3f61fa086e319ac4d0500e16a8352564ef2266104810df39c  josegpt.com.initd
+dc7a58657683e936ca3f413a5b30b8c9196b8e6fd93ff215a2a3b04579ef4d668fcf61affc4aae2092f0ebd0836cdb9fd0939389345f87bd033f18d599cd679f  josegpt.com.confd
 "
