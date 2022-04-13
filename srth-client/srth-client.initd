@@ -1,0 +1,23 @@
+#!/sbin/openrc-run
+name="srth-client"
+description="sorthing.com client service"
+supervisor=supervise-daemon
+SRTH_CLIENT_USER=${SRTH_CLIENT_USER:-srth-client}
+SRTH_CLIENT_PORT=${SRTH_CLIENT_PORT:-5001}
+SRTH_CLIENT_ARGS=${SRTH_CLIENT_ARGS:-}
+LOGS=/var/log/srth-client.log
+supervise_daemon_args="-1 $LOGS -2 $LOGS"
+command="/usr/bin/$name"
+command_args="-port $SRTH_CLIENT_PORT $SRTH_CLIENT_ARGS"
+command_user="$SRTH_CLIENT_USER:$SRTH_CLIENT_USER"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+	need net
+    use mariadb
+    use redis
+}
+
+start_pre() {
+  checkpath -f "$LOGS" -m 644 -o "$SRTH_CLIENT_USER:$SRTH_CLIENT_USER"
+}

@@ -1,0 +1,40 @@
+# Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+# Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
+pkgname=srth-client
+pkgver=0.2.0
+pkgrel=0
+pkgdesc="sorthing.com client service"
+url="https://sr.ht/~josegpt/sorthing.com"
+arch="all"
+license="GPLv3"
+makedepends="go"
+depends="mariadb redis"
+subpackages="$pkgname-openrc"
+source="$pkgname-v$pkgver.tar.gz::https://git.sr.ht/~josegpt/srth-client/archive/v$pkgver.tar.gz
+	$pkgname.initd
+	$pkgname.confd"
+builddir="$srcdir/$pkgname-v$pkgver"
+install="$pkgname.pre-install $pkgname.pre-deinstall"
+
+build() {
+	go build -v -o "$pkgname" cmd/graphql/main.go
+}
+
+check() {
+	# go test -v -cover ./...
+	:
+}
+
+package() {
+	install -Dm755 "$pkgname" "$pkgdir"/usr/bin/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".initd \
+			"$pkgdir"/etc/init.d/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".confd \
+			"$pkgdir"/etc/conf.d/"$pkgname"
+}
+
+sha512sums="
+2b0d0648aadb61f0bdc19cf5b3e2b327134f22d5621b5228e8fd8b3be510459b21ae78ba5e60fe9b22b403d10d2e9a7699238de8f9064b0f21d9fdde6999f284  srth-client-v0.2.0.tar.gz
+ab4f5459e25cd3a1ca9f3ea131fc9855c313666a1f5b9f0d3e12d97e6c261a01d3c0ea3897247506ca8a96b01829f798dd0e8f821367002dfabd49612a60a9b6  srth-client.initd
+f57469598c3fa76bc8c6627b7355bb61efb4c8b2d98f80a119d7f70afecbaaad5cdfb080fdff54727dbe51bea980c61a9790c4a9b393cf40ea7c3452a642ee0c  srth-client.confd
+"
