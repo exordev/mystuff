@@ -1,0 +1,5 @@
+#!/bin/sh
+addgroup -S srth-account 2>/dev/null
+adduser -SDH -s /sbin/nologin -G srth-account -g srth-account srth-account 2>/dev/null
+
+exit 0

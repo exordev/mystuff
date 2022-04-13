@@ -1,0 +1,39 @@
+# Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+# Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
+pkgname=srth-account
+pkgver=0.0.2
+pkgrel=0
+pkgdesc="sorthing.com account service"
+url="https://sr.ht/~josegpt/sorthing.com"
+arch="all"
+license="GPLv3"
+makedepends="go"
+depends="mariadb"
+subpackages="$pkgname-openrc"
+source="$pkgname-v$pkgver.tar.gz::https://git.sr.ht/~josegpt/srth-account/archive/v$pkgver.tar.gz
+	$pkgname.initd
+	$pkgname.confd"
+builddir="$srcdir/$pkgname-v$pkgver"
+install="$pkgname.pre-install $pkgname.pre-deinstall"
+
+build() {
+	go build -v -o "$pkgname" cmd/graphql/main.go
+}
+
+check() {
+	go test -v -cover ./...
+}
+
+package() {
+	install -Dm755 "$pkgname" "$pkgdir"/usr/bin/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".initd \
+			"$pkgdir"/etc/init.d/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".confd \
+			"$pkgdir"/etc/conf.d/"$pkgname"
+}
+
+sha512sums="
+882af7828a26a3b25d16240fa0f2dc7119a15412b5518bcbadc8f8fa4fd00dffda2704c75c14955c207600461c1f9b2340c07560c9bf19ad67510fc46165fac5  srth-account-v0.0.2.tar.gz
+cca9e4c024d70f733e03a42eeb369dc812ae1da8ee0e6c6ae819deadc9aa977af406d8713187b6bac737ce01c2ff9c9e8436fd6843ced4f247cce4a8da17acc2  srth-account.initd
+d8f52429c5cf230d75e74e93f42c8f2d013b722a94cc022e1f6e2fb471f6ad7297ed627155a497e2cc61cabd81730cc4e29c1f394b0b5f727a7deabd075536fb  srth-account.confd
+"

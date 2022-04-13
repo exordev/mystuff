@@ -1,0 +1,22 @@
+#!/sbin/openrc-run
+name="srth-account"
+description="sorthing.com account service"
+supervisor=supervise-daemon
+SRTH_ACCOUNT_USER=${SRTH_ACCOUNT_USER:-srth-account}
+SRTH_ACCOUNT_PORT=${SRTH_ACCOUNT_PORT:-5002}
+SRTH_ACCOUNT_ARGS=${SRTH_ACCOUNT_ARGS:-}
+LOGS=/var/log/srth-account.log
+supervise_daemon_args="-1 $LOGS -2 $LOGS"
+command="/usr/bin/$name"
+command_args="-port $SRTH_ACCOUNT_PORT $SRTH_ACCOUNT_ARGS"
+command_user="$SRTH_ACCOUNT_USER:$SRTH_ACCOUNT_USER"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+	need net
+    use mariadb
+}
+
+start_pre() {
+  checkpath -f "$LOGS" -m 644 -o "$SRTH_ACCOUNT_USER:$SRTH_ACCOUNT_USER"
+}
