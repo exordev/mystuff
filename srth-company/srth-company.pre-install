@@ -1,0 +1,5 @@
+#!/bin/sh
+addgroup -S srth-company 2>/dev/null
+adduser -SDH -s /sbin/nologin -G srth-company -g srth-company srth-company 2>/dev/null
+
+exit 0

@@ -1,0 +1,8 @@
+# Run the daemon as this user:
+# SRTH_COMPANY_USER=srth-company
+
+# Bind the server to this address:
+# SRTH_COMPANY_PORT=5003
+
+# Extra arguments
+# SRTH_COMPANY_ARGS=

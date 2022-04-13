@@ -1,0 +1,22 @@
+#!/sbin/openrc-run
+name="srth-company"
+description="sorthing.com company service"
+supervisor=supervise-daemon
+SRTH_COMPANY_USER=${SRTH_COMPANY_USER:-srth-company}
+SRTH_COMPANY_PORT=${SRTH_COMPANY_PORT:-5003}
+SRTH_COMPANY_ARGS=${SRTH_COMPANY_ARGS:-}
+LOGS=/var/log/srth-company.log
+supervise_daemon_args="-1 $LOGS -2 $LOGS"
+command="/usr/bin/$name"
+command_args="-port $SRTH_COMPANY_PORT $SRTH_COMPANY_ARGS"
+command_user="$SRTH_COMPANY_USER:$SRTH_COMPANY_USER"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+	need net
+    use mariadb
+}
+
+start_pre() {
+  checkpath -f "$LOGS" -m 644 -o "$SRTH_COMPANY_USER:$SRTH_COMPANY_USER"
+}
