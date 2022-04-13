@@ -1,0 +1,39 @@
+# Contributor: Jose G Perez Taveras <josegpt27@gmail.com>
+# Maintainer: Jose G Perez Taveras <josegpt27@gmail.com>
+pkgname=srth-store
+pkgver=0.0.1
+pkgrel=0
+pkgdesc="sorthing.com store service"
+url="https://sr.ht/~josegpt/sorthing.com"
+arch="all"
+license="GPLv3"
+makedepends="go"
+depends="mariadb"
+subpackages="$pkgname-openrc"
+source="$pkgname-v$pkgver.tar.gz::https://git.sr.ht/~josegpt/srth-store/archive/v$pkgver.tar.gz
+	$pkgname.initd
+	$pkgname.confd"
+builddir="$srcdir/$pkgname-v$pkgver"
+install="$pkgname.pre-install $pkgname.pre-deinstall"
+
+build() {
+	go build -v -o "$pkgname" cmd/graphql/main.go
+}
+
+check() {
+	go test -v -cover ./...
+}
+
+package() {
+	install -Dm755 "$pkgname" "$pkgdir"/usr/bin/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".initd \
+			"$pkgdir"/etc/init.d/"$pkgname"
+	install -Dm750 "$srcdir"/"$pkgname".confd \
+			"$pkgdir"/etc/conf.d/"$pkgname"
+}
+
+sha512sums="
+c80478224e80876f772188d5fb587547a962b5d305057ed4f532c7b8725610f3d7b4bfd53759bd8887c51aea854cddca824389f71f255a3dbfd61d1ba6fb0c6d  srth-store-v0.0.1.tar.gz
+fcdea568ac83150a4ced49836cb068d1f6971c16da72b09a79c1ea9faa264262749b08f66a8d6c0b8373f4c595335c62b7b187f5c998a4d82a83f550dab5be59  srth-store.initd
+a9d9c057895c9727519305d29ebabf2a2002909ad9ac5ad4d18edca24641fc81a48039f601a9362f8b9b78d6576fb276373147bd8a9c55d9390ec8ec7b008767  srth-store.confd
+"
