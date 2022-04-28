@@ -1,3 +1,8 @@
 ports
 =====
-    my personal OpenBSD linux ports
+	my personal OpenBSD linux ports
+
+notes
+----
+	* add users to the end of /usr/ports/infrastructure/user.list
+		+ 2000	_josegpt.com	_josegpt.com	www/josegpt.com
