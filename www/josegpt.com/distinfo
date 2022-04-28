@@ -4,11 +4,11 @@ SHA256 (go_modules/github.com/bradleyjkemp/cupaloy/v2/@v/v2.7.0.mod) = Irw2AV+FC
 SHA256 (go_modules/github.com/bradleyjkemp/cupaloy/v2/@v/v2.7.0.zip) = 5GrpspHlFDT7l2zWx4d4Fti1Cp5eQPCaO47U6FDqOlY=
 SHA256 (go_modules/github.com/stretchr/testify/@v/v1.7.1.mod) = //gWjZjmoHFWxFShtuklUJ8xd+lsFVUW1/lrQHnMo78=
 SHA256 (go_modules/github.com/stretchr/testify/@v/v1.7.1.zip) = 14k418YMuMtoEPf9XC9/f/YgkeSDyjYQr2nDkgAR3EQ=
-SHA256 (josegpt.com-1.1.5.zip) = 9c/Mk3+RwDZXYLcXPKz700WeWpowVSoIr7yijlxhvuY=
+SHA256 (josegpt.com-1.1.6.zip) = Pxw3JzNMduMMcfdDYfWvM4Ub+LJ+m0wULpvV+qJRves=
 SIZE (go_modules/git.sr.ht/~josegpt/srth-core/@v/v0.9.0.mod) = 529
 SIZE (go_modules/git.sr.ht/~josegpt/srth-core/@v/v0.9.0.zip) = 19939
 SIZE (go_modules/github.com/bradleyjkemp/cupaloy/v2/@v/v2.7.0.mod) = 209
 SIZE (go_modules/github.com/bradleyjkemp/cupaloy/v2/@v/v2.7.0.zip) = 289266
 SIZE (go_modules/github.com/stretchr/testify/@v/v1.7.1.mod) = 216
 SIZE (go_modules/github.com/stretchr/testify/@v/v1.7.1.zip) = 110051
-SIZE (josegpt.com-1.1.5.zip) = 40574
+SIZE (josegpt.com-1.1.6.zip) = 40553
