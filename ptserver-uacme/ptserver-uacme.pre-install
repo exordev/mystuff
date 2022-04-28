@@ -1,5 +1,0 @@
-#!/bin/sh
-addgroup -S uacme 2>/dev/null
-adduser -SDH -s /sbin/nologin -G uacme -g uacme uacme 2>/dev/null
-
-exit 0

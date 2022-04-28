@@ -1,8 +1,0 @@
-# Run the daemon as this user:
-# SRTH_CLIENT_USER=srth-client
-
-# Bind the server to this address:
-# SRTH_CLIENT_PORT=5001
-
-# Extra arguments
-# SRTH_CLIENT_ARGS=

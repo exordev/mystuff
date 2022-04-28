@@ -1,5 +1,0 @@
-#!/bin/sh
-addgroup -S srth-store 2>/dev/null
-adduser -SDH -s /sbin/nologin -G srth-store -g srth-store srth-store 2>/dev/null
-
-exit 0

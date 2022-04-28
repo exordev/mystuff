@@ -1,5 +1,0 @@
-#!/bin/sh
-deluser nginx 2>/dev/null
-delgroup www-data 2>/dev/null
-
-exit 0

@@ -1,4 +1,0 @@
-#!/bin/sh
-deluser srth-product 2>/dev/null
-
-exit 0

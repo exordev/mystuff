@@ -1,5 +1,0 @@
-#!/bin/sh
-addgroup -S josegpt.com 2>/dev/null
-adduser -SDH -s /sbin/nologin -G josegpt.com -g josegpt.com josegpt.com 2>/dev/null
-
-exit 0

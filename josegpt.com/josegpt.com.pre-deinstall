@@ -1,4 +1,0 @@
-#!/bin/sh
-deluser josegpt.com 2>/dev/null
-
-exit 0

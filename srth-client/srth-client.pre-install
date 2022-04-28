@@ -1,5 +1,0 @@
-#!/bin/sh
-addgroup -S srth-client 2>/dev/null
-adduser -SDH -s /sbin/nologin -G srth-client -g srth-client srth-client 2>/dev/null
-
-exit 0
