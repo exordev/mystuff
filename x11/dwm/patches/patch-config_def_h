@@ -47,6 +47,15 @@ Index: config.def.h
  static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
  static const Layout layouts[] = {
+@@ -45,7 +44,7 @@ static const Layout layouts[] = {
+ };
+
+ /* key definitions */
+-#define MODKEY Mod1Mask
++#define MODKEY Mod4Mask
+ #define TAGKEYS(KEY,TAG) \
+ 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+ 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 @@ -58,7 +57,15 @@ static const Layout layouts[] = {
  /* commands */
  static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
