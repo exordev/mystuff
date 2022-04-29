@@ -1,27 +1,28 @@
-COMMENT =	My personal website
+COMMENT =			My personal website
 
-V =		1.1.6
-MODGO_MODNAME =	git.sr.ht/~josegpt/josegpt.com
-MODGO_VERSION =	v${V}
+V =					1.1.6
+MODGO_MODNAME =		git.sr.ht/~josegpt/josegpt.com
+MODGO_VERSION =		v${V}
 
-DISTNAME =	josegpt.com-${V}
+DISTNAME =			josegpt.com-${V}
+REVISION =			1
 
-CATEGORIES =	www
+CATEGORIES =		www
 
-HOMEPAGE =	https://josegpt.com
+HOMEPAGE =			https://josegpt.com
 
 MAINTAINER =		Jose G Perez Taveras <josegpt27@gmail.com>
 
 # MIT
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		c pthread
+WANTLIB =			c pthread
 
-MODULES =		lang/go
+MODULES =			lang/go
 
-MODGO_MODULES =	git.sr.ht/~josegpt/srth-core 		v0.9.0 \
-		github.com/bradleyjkemp/cupaloy/v2 	v2.7.0 \
-		github.com/stretchr/testify 		v1.7.1
+MODGO_MODULES =		git.sr.ht/~josegpt/srth-core 		v0.9.0 \
+					github.com/bradleyjkemp/cupaloy/v2 	v2.7.0 \
+					github.com/stretchr/testify 		v1.7.1
 
 # These are needed for dependency resolution. We don't actually need the
 # coresponding code
