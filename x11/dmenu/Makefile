@@ -1,6 +1,6 @@
 COMMENT=		dynamic menu for X11
 
-V=			5.1
+V=				5.1
 DISTNAME=		dmenu-${V}
 REVISION=		0
 
@@ -21,8 +21,8 @@ MASTER_SITES=		https://dl.suckless.org/tools/
 RUN_DEPENDS=		fonts/spleen
 
 MAKE_ENV=		LDFLAGS="${LDFLAGS}" \
-			X11INC=${X11BASE}/include \
-			X11LIB=${X11BASE}/lib
+				X11INC=${X11BASE}/include \
+				X11LIB=${X11BASE}/lib
 
 NO_TEST=		Yes
 
