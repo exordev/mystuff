@@ -1,11 +1,11 @@
 COMMENT =			My personal website
 
-V =					1.1.6
-MODGO_MODNAME =		git.sr.ht/~josegpt/josegpt.com
-MODGO_VERSION =		v${V}
+V =				1.2.1
+MODGO_MODNAME =	git.sr.ht/~josegpt/josegpt.com
+MODGO_VERSION =	v${V}
 
 DISTNAME =			josegpt.com-${V}
-REVISION =			1
+REVISION =			0
 
 CATEGORIES =		www
 
@@ -20,13 +20,10 @@ WANTLIB =			c pthread
 
 MODULES =			lang/go
 
-MODGO_MODULES =		git.sr.ht/~josegpt/srth-core 		v0.9.0 \
+MODGO_MODULES =	git.sr.ht/~josegpt/srth-core 			v0.9.0 \
 					github.com/bradleyjkemp/cupaloy/v2 	v2.7.0 \
-					github.com/stretchr/testify 		v1.7.1
-
-# These are needed for dependency resolution. We don't actually need the
-# coresponding code
-#MODGO_MODFILES =	modulename version
+					github.com/stretchr/testify 			v1.7.1 \
+					golang.org/x/sys 						v0.0.0-20220429233432-b5fbb4746d32
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/josegpt.com/static/{img,css}
