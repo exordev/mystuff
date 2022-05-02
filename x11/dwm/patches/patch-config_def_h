@@ -17,8 +17,8 @@ Index: config.def.h
 -static const char col_gray3[]       = "#bbbbbb";
 -static const char col_gray4[]       = "#eeeeee";
 -static const char col_cyan[]        = "#005577";
-+static const char *fonts[]          = { "spleen:pixelsize=24:antialias=false" };
-+static const char dmenufont[]       = "spleen:pixelsize=24:antialias=false";
++static const char *fonts[]          = { "Victor Mono:size=14" };
++static const char dmenufont[]       = "Victor Mono:size=14";
 +static const char col_gray1[]       = "#282828";
 +static const char col_gray2[]       = "#1d2021";
 +static const char col_gray3[]       = "#ebdbb2";
