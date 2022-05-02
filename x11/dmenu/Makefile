@@ -18,7 +18,7 @@ WANTLIB=		X11 Xft Xinerama c fontconfig
 
 MASTER_SITES=		https://dl.suckless.org/tools/
 
-RUN_DEPENDS=		fonts/spleen
+RUN_DEPENDS=		fonts/victor-mono
 
 MAKE_ENV=		LDFLAGS="${LDFLAGS}" \
 				X11INC=${X11BASE}/include \
