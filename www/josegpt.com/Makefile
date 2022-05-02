@@ -16,6 +16,7 @@ MAINTAINER =		Jose G Perez Taveras <josegpt27@gmail.com>
 # MIT
 PERMIT_PACKAGE =	Yes
 
+# uses pledge()
 WANTLIB =			c pthread
 
 MODULES =			lang/go
