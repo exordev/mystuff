@@ -2,7 +2,7 @@ COMMENT=		dynamic window manager
 
 V=				6.3
 DISTNAME=		dwm-${V}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		x11
 
