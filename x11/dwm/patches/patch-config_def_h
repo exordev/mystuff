@@ -3,7 +3,7 @@ Index: config.def.h
 +++ config.def.h
 @@ -1,17 +1,17 @@
  /* See LICENSE file for copyright and license details. */
-
+ 
  /* appearance */
 -static const unsigned int borderpx  = 1;        /* border pixel of windows */
 +static const unsigned int borderpx  = 2;        /* border pixel of windows */
@@ -19,11 +19,11 @@ Index: config.def.h
 -static const char col_cyan[]        = "#005577";
 +static const char *fonts[]          = { "Victor Mono:size=14" };
 +static const char dmenufont[]       = "Victor Mono:size=14";
-+static const char col_gray1[]       = "#ECEFF4";
-+static const char col_gray2[]       = "#E5E9F0";
-+static const char col_gray3[]       = "#3B4252";
-+static const char col_gray4[]       = "#2E3440";
-+static const char col_cyan[]        = "#D8DEE9";
++static const char col_gray1[]       = "#1A1A1A";
++static const char col_gray2[]       = "#282828";
++static const char col_gray3[]       = "#F3F3F3";
++static const char col_gray4[]       = "#FFFFFF";
++static const char col_cyan[]        = "#D0021B";
  static const char *colors[][3]      = {
  	/*               fg         bg         border   */
  	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -37,7 +37,7 @@ Index: config.def.h
 +	/* class              instance    title       tags mask     isfloating   monitor */
 +	{ "firefox-default",  NULL,       NULL,       1 << 8,       0,           -1 },
  };
-
+ 
  /* layout(s) */
 -static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 +static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
@@ -45,11 +45,11 @@ Index: config.def.h
 -static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 +static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
  static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
-
+ 
  static const Layout layouts[] = {
 @@ -45,7 +44,7 @@ static const Layout layouts[] = {
  };
-
+ 
  /* key definitions */
 -#define MODKEY Mod1Mask
 +#define MODKEY Mod4Mask
@@ -70,7 +70,7 @@ Index: config.def.h
 +static const char *micvolumedowncmd[]  = { "sndioctl", "input.level=-0.1", NULL };
 +static const char *micvolumeupcmd[]  = { "sndioctl", "input.level=+0.1", NULL };
 +static const char *micvolumemutecmd[]  = { "sndioctl", "input.mute=!", NULL };
-
+ 
  static Key keys[] = {
  	/* modifier                     key        function        argument */
 @@ -85,6 +92,14 @@ static Key keys[] = {
