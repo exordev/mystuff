@@ -1,8 +1,8 @@
 COMMENT =			My personal website
 
-V =					1.2.3
-MODGO_MODNAME =		git.sr.ht/~josegpt/josegpt.com
-MODGO_VERSION =		v${V}
+V =				1.2.3
+MODGO_MODNAME =	git.sr.ht/~josegpt/josegpt.com
+MODGO_VERSION =	v${V}
 
 DISTNAME =			josegpt.com-${V}
 REVISION =			0
@@ -21,9 +21,9 @@ WANTLIB =			c pthread
 
 MODULES =			lang/go
 
-MODGO_MODULES =		git.sr.ht/~josegpt/web-core				v0.10.0 \
+MODGO_MODULES =	git.sr.ht/~josegpt/web-core			v0.10.0 \
 					github.com/bradleyjkemp/cupaloy/v2		v2.7.0 \
-					github.com/stretchr/testify				v1.7.1 \
+					github.com/stretchr/testify			v1.7.1 \
 					golang.org/x/sys						v0.0.0-20220429233432-b5fbb4746d32
 
 post-install:
