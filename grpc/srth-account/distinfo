@@ -1,5 +1,5 @@
-SHA256 (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.2.0.mod) = 9b9YIJO4Pzu+SRD0kpezZf81C76z1ML0L7VZjoqOJ9w=
-SHA256 (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.2.0.zip) = 0s/VEUdnXrxwtJJPKuRCZ7bYyXtuYwhscPo4OLJDTG4=
+SHA256 (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.10.1.mod) = 9b9YIJO4Pzu+SRD0kpezZf81C76z1ML0L7VZjoqOJ9w=
+SHA256 (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.10.1.zip) = 50O8fiq+Aa77X5I4motf7+YrZ6BYWKfIYU9kwle1Y8Q=
 SHA256 (go_modules/git.sr.ht/~josegpt/web-core/@v/v0.17.0.mod) = Ya0gPJmGwT2FcwdQANFy3kNrBXQgC1eyNilzfIgmB1s=
 SHA256 (go_modules/git.sr.ht/~josegpt/web-core/@v/v0.17.0.zip) = ehaRZQuwcubWcM7Fwa66HVNWFKSpAsCBRQJ4yQyMeLE=
 SHA256 (go_modules/github.com/99designs/gqlgen/@v/v0.17.5.mod) = g/asTV2Is57IlzbvtI5Q3MWLAcy2LecOCJiFch8+br4=
@@ -28,9 +28,9 @@ SHA256 (go_modules/google.golang.org/protobuf/@v/v1.28.0.mod) = P3xyYKmH3OL9+0jO
 SHA256 (go_modules/google.golang.org/protobuf/@v/v1.28.0.zip) = 8G3DnOkwQ9bskaUQbH7JWL5rS6UgyrOiGiRI04fPFaQ=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20210107192922-496545a6307b.mod) = IVeYYKIDBvz0OxvSNNH7oxlJnHdhG3HAX5vzupDauTk=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20210107192922-496545a6307b.zip) = UWm1Yl08NR8T6KTsSAL3CQcnAbRB7ZIYHGBR7OU2Fak=
-SHA256 (srth-account-v0.1.0.zip) = q/FUteegkUpjTJqUPACj9GYykwPCayZv7BwxbGh44TM=
-SIZE (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.2.0.mod) = 430
-SIZE (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.2.0.zip) = 12798
+SHA256 (srth-account-v0.5.0.zip) = tpFYeNSA6eQ6dKNZqnE6sSzY8lFDoAu9flomx6x3SOM=
+SIZE (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.10.1.mod) = 430
+SIZE (go_modules/git.sr.ht/~josegpt/srth-proto/@v/v0.10.1.zip) = 31952
 SIZE (go_modules/git.sr.ht/~josegpt/web-core/@v/v0.17.0.mod) = 450
 SIZE (go_modules/git.sr.ht/~josegpt/web-core/@v/v0.17.0.zip) = 11551
 SIZE (go_modules/github.com/99designs/gqlgen/@v/v0.17.5.mod) = 620
@@ -59,4 +59,4 @@ SIZE (go_modules/google.golang.org/protobuf/@v/v1.28.0.mod) = 124
 SIZE (go_modules/google.golang.org/protobuf/@v/v1.28.0.zip) = 1573860
 SIZE (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20210107192922-496545a6307b.mod) = 95
 SIZE (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20210107192922-496545a6307b.zip) = 105245
-SIZE (srth-account-v0.1.0.zip) = 23117
+SIZE (srth-account-v0.5.0.zip) = 23201

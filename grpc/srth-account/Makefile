@@ -1,6 +1,6 @@
 COMMENT =	sorthing.com account service
 
-V =				0.1.0
+V =				0.5.0
 MODGO_MODNAME =	git.sr.ht/~josegpt/srth-account
 MODGO_VERSION =	v${V}
 
@@ -20,7 +20,7 @@ WANTLIB =		c pthread
 
 MODULES =		lang/go
 
-MODGO_MODULES =	git.sr.ht/~josegpt/srth-proto	v0.2.0 \
+MODGO_MODULES =	git.sr.ht/~josegpt/srth-proto	v0.10.1 \
 					git.sr.ht/~josegpt/web-core	v0.17.0 \
 					github.com/adlio/schema		v1.3.0 \
 					github.com/go-sql-driver/mysql	v1.6.0 \
