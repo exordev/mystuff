@@ -1,9 +1,9 @@
 COMMENT =			PTServer configuration
 
-V =				0.0.1
+V =				0.0.2
 DISTNAME =			v${V}
 PKGNAME =			ptserver-conf-${V}
-REVISION =			1
+REVISION =			0
 
 CATEGORIES =		www
 
