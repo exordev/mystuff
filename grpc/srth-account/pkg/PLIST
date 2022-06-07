@@ -1,4 +1,0 @@
-@newgroup _srth-account:2002
-@newuser _srth-account:2002:_srth-account:daemon:srth-account account:/nonexistent:/sbin/nologin
-@rcscript ${RCDIR}/srth_accountd
-@bin bin/srth-account
