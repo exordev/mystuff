@@ -1,11 +1,8 @@
 ports
 =====
-    my personal OpenBSD linux ports
+    my personal OpenBSD ports
 
 notes
 ----
     * add users to the end of /usr/ports/infrastructure/db/user.list
         + 2000  _josegptcom    _josegptcom    www/josegptcom
-    * after compiling run these commands to share packages:
-        # cd /usr/ports/packages/$(uname -p)
-        # pkg_sign -s signify2 -s /etc/signify/canal-pkg.sec -o signed -S all
