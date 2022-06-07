@@ -3,7 +3,7 @@ COMMENT =			PTServer configuration
 V =				0.0.1
 DISTNAME =			v${V}
 PKGNAME =			ptserver-conf-${V}
-REVISION =			0
+REVISION =			1
 
 CATEGORIES =		www
 
