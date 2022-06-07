@@ -1,0 +1,27 @@
+@newgroup _josegptcom:2000
+@newuser _josegptcom:2000:_josegptcom:daemon:josegptcom account:/nonexistent:/sbin/nologin
+@rcscript ${RCDIR}/josegptcomd
+@bin bin/josegptcom
+share/josegptcom/
+@mode 755
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/
+share/josegptcom/static/
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/
+share/josegptcom/static/css/
+@mode 755
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/css/
+share/josegptcom/static/css/style.css
+@mode
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/css/style.css
+share/josegptcom/static/img/
+@mode 755
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/img/
+@mode
+share/josegptcom/static/img/execode-logo-variant.svg
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/img/execode-logo-variant.svg
+share/josegptcom/static/img/execode-logo.png
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/img/execode-logo.png
+share/josegptcom/static/img/execode-logo.svg
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/img/execode-logo.svg
+share/josegptcom/static/img/favicon.ico
+@sample ${LOCALSTATEDIR}/www/htdocs/josegptcom/static/img/favicon.ico
