@@ -2,7 +2,7 @@ COMMENT=		dynamic window manager
 
 V=				6.3
 DISTNAME=		dwm-${V}
-REVISION=		1
+REVISION=		0
 
 CATEGORIES=		x11
 
@@ -19,7 +19,8 @@ WANTLIB=		X11 Xinerama Xft c fontconfig
 MASTER_SITES=	https://dl.suckless.org/dwm/
 
 RUN_DEPENDS=	x11/dmenu>=4.6 \
-				fonts/victor-mono
+				fonts/victor-mono \
+				multimedia/playerctl
 
 MAKE_ENV=		LDFLAGS="${LDFLAGS}" \
 				X11INC=${X11BASE}/include \
