@@ -1,8 +1,17 @@
-ports
-=====
+mystuff
+=======
     my personal OpenBSD ports
 
 notes
-----
+-----
+	* create /etc/mk.conf with the following options:
+		- SUDO=doas
+		- PORTS_PRIVSEP=yes 
+	* create or add to /etc/doas.conf the following options:
+		- permit keepenv nopass josegpt as _pbuild
+		- permit keepenv nopass josegpt as _pfetch
+	* clone ports under /usr
+	* go to /usr/ports and run:
+		- doas make fix-permissions
     * add users to the end of /usr/ports/infrastructure/db/user.list
-        + 2000  _josegptcom    _josegptcom    www/josegptcom
+        - 2000  _josegptcom    _josegptcom    www/josegptcom
