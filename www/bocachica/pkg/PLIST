@@ -1,0 +1,9 @@
+share/examples/bocachica/
+share/examples/bocachica/acme-client.conf
+@sample ${SYSCONFDIR}/acme-client.conf
+share/examples/bocachica/httpd.conf
+@sample ${SYSCONFDIR}/httpd.conf
+share/examples/bocachica/mk.conf
+@sample ${SYSCONFDIR}/mk.conf
+share/examples/bocachica/relayd.conf
+@sample ${SYSCONFDIR}/relayd.conf

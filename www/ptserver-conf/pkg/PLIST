@@ -1,8 +1,0 @@
-share/examples/ptserver-conf/
-share/examples/ptserver-conf/acme-client.conf
-@sample ${SYSCONFDIR}/acme-client.conf
-share/examples/ptserver-conf/httpd.conf
-@sample ${SYSCONFDIR}/httpd.conf
-share/examples/ptserver-conf/relayd.conf
-@mode 600
-@sample ${SYSCONFDIR}/relayd.conf
