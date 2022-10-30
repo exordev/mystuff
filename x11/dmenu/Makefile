@@ -1,30 +1,30 @@
-COMMENT=			dynamic menu for X11
+COMMENT=		dynamic menu for X11
 
-V=					5.2
-DISTNAME=			dmenu-${V}
-REVISION=			0
+V=			5.2
+DISTNAME=		dmenu-${V}
+REVISION=		0
 
-CATEGORIES=			x11
+CATEGORIES=		x11
 
-HOMEPAGE=			https://tools.suckless.org/dmenu
+HOMEPAGE=		https://tools.suckless.org/dmenu
 
-MAINTAINER=			Jose G Perez Taveras <josegpt27@gmail.com>
+MAINTAINER=		Jose G Perez Taveras <josegpt27@gmail.com>
 
 # MIT/X
 PERMIT_PACKAGE=		Yes
 
 # uses pledge()
-WANTLIB=			X11 Xft Xinerama c fontconfig
+WANTLIB=		X11 Xft Xinerama c fontconfig
 
 MASTER_SITES=		https://dl.suckless.org/tools/
 
 RUN_DEPENDS=		fonts/victor-mono
 
-MAKE_ENV=			LDFLAGS="${LDFLAGS}" \
-					X11INC=${X11BASE}/include \
-					X11LIB=${X11BASE}/lib
+MAKE_ENV=		LDFLAGS="${LDFLAGS}" \
+			X11INC=${X11BASE}/include \
+			X11LIB=${X11BASE}/lib
 
-NO_TEST=			Yes
+NO_TEST=		Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/{dmenu,stest} ${PREFIX}/bin/
