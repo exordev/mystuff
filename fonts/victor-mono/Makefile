@@ -1,27 +1,27 @@
-COMMENT =		a free programming font with cursive italics and ligature
-V =			1.5.2
-DISTNAME =		VictorMonoAll
-PKGNAME =		victor-mono-${V}
+COMMENT=			a free programming font with cursive italics and ligature
 
-CATEGORIES =	fonts
+V=					1.5.4
+DISTNAME=			victor-mono-${V}
 
-HOMEPAGE =	https://rubjo.github.io/victor-mono
+CATEGORIES=			fonts
 
-MAINTAINER =	Jose G Perez Taveras <josegpt27@gmail.com>
+HOMEPAGE=			https://rubjo.github.io/victor-mono
+
+MAINTAINER=			Jose G Perez Taveras <josegpt27@gmail.com>
 
 # OFL-1.1
-PERMIT_PACKAGE = Yes
+PERMIT_PACKAGE= 	Yes
 
-MASTER_SITES =	https://github.com/rubjo/victor-mono/raw/v${V}/public/
+MASTER_SITES=		https://rubjo.github.io/
+DISTFILES=			victor-mono-${V}{victor-mono/VictorMonoAll}${EXTRACT_SUFX}
+EXTRACT_SUFX=		.zip
 
-EXTRACT_SUFX =	.zip
+PKG_ARCH=			*
 
-PKG_ARCH =	*
+FONTDIR=			${PREFIX}/share/fonts/victor-mono
 
-FONTDIR =	${PREFIX}/share/fonts/victor-mono
-
-NO_BUILD = YES
-NO_TEST = YES
+NO_BUILD= 			Yes
+NO_TEST= 			Yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${FONTDIR}
