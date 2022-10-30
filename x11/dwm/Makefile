@@ -1,32 +1,32 @@
-COMMENT=			dynamic window manager
+COMMENT=		dynamic window manager
 
-V=					6.4
-DISTNAME=			dwm-${V}
-REVISION=			0
+V=			6.4
+DISTNAME=		dwm-${V}
+REVISION=		0
 
-CATEGORIES=			x11
+CATEGORIES=		x11
 
-HOMEPAGE=			https://dwm.suckless.org/
+HOMEPAGE=		https://dwm.suckless.org/
 
-MAINTAINER=			Jose G Perez Taveras <josegpt27@gmail.com>
+MAINTAINER=		Jose G Perez Taveras <josegpt27@gmail.com>
 
 # MIT/X
 PERMIT_PACKAGE=		Yes
 
 # uses pledge()
-WANTLIB=			X11 Xinerama Xft c fontconfig
+WANTLIB=		X11 Xinerama Xft c fontconfig
 
 MASTER_SITES=		https://dl.suckless.org/dwm/
 
 RUN_DEPENDS=		x11/dmenu>=4.6 \
-					fonts/victor-mono \
-					multimedia/playerctl
+			fonts/victor-mono \
+			multimedia/playerctl
 
-MAKE_ENV=			LDFLAGS="${LDFLAGS}" \
-					X11INC=${X11BASE}/include \
-					X11LIB=${X11BASE}/lib
+MAKE_ENV=		LDFLAGS="${LDFLAGS}" \
+			X11INC=${X11BASE}/include \
+			X11LIB=${X11BASE}/lib
 
-NO_TEST=			Yes
+NO_TEST=		Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/dwm ${PREFIX}/bin/
