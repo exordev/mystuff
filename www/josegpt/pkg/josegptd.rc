@@ -1,6 +1,7 @@
 #!/bin/ksh
 
-daemon="${TRUEPREFIX}/bin/josegptcom"
+daemon="${TRUEPREFIX}/bin/josegpt"
+daemon_logger="daemon.info"
 daemon_user="_josegptcom"
 
 . /etc/rc.d/rc.subr
