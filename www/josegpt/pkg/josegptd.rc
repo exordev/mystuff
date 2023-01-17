@@ -2,7 +2,7 @@
 
 daemon="${TRUEPREFIX}/bin/josegpt"
 daemon_logger="daemon.info"
-daemon_user="_josegptcom"
+daemon_user="_josegpt"
 
 . /etc/rc.d/rc.subr
 

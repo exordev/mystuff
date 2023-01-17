@@ -1,3 +1,0 @@
-NOTES:
-# crontab -e
-0    0    *    *    *    /usr/bin/ftp -V -o /var/www/htdocs/josegptcom/projects.json https://api.github.com/users/josegpt/repos?sort=updated
