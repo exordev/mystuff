@@ -11,13 +11,3 @@ share/josegpt/static/css/
 @sample /var/www/statik/josegpt/css/
 share/josegpt/static/css/style.css
 @sample /var/www/statik/josegpt/css/style.css
-share/josegpt/static/img/
-@sample /var/www/statik/josegpt/img/
-share/josegpt/static/img/execode-logo-variant.svg
-@sample /var/www/statik/josegpt/img/execode-logo-variant.svg
-share/josegpt/static/img/execode-logo.png
-@sample /var/www/statik/josegpt/img/execode-logo.png
-share/josegpt/static/img/execode-logo.svg
-@sample /var/www/statik/josegpt/img/execode-logo.svg
-share/josegpt/static/img/favicon.ico
-@sample /var/www/statik/josegpt/img/favicon.ico

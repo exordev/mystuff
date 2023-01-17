@@ -1,6 +1,6 @@
 COMMENT =		My personal website
 
-V =			1.16.1
+V =			1.16.2
 MODGO_MODNAME =		git.sr.ht/~josegpt/josegpt
 MODGO_VERSION =		v${V}
 
@@ -21,7 +21,7 @@ WANTLIB =		c pthread
 
 MODULES =		lang/go
 
-MODGO_MODULES =		git.sr.ht/~josegpt/core-go		v0.22.0 \
+MODGO_MODULES =		git.sr.ht/~josegpt/core-go		v0.23.0 \
 			github.com/!burnt!sushi/toml		v1.2.1 \
 			golang.org/x/sys			v0.4.0 \
 			google.golang.org/grpc			v1.52.0 \
@@ -29,7 +29,7 @@ MODGO_MODULES =		git.sr.ht/~josegpt/core-go		v0.22.0 \
 			github.com/golang/protobuf		v1.5.2 \
 			golang.org/x/net			v0.5.0 \
 			golang.org/x/text			v0.6.0 \
-			google.golang.org/genproto		v0.0.0-20230112194545-e10362b5ecf9
+			google.golang.org/genproto		v0.0.0-20230113154510-dbe35b8444a5
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/josegpt
