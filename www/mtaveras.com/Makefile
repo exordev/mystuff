@@ -17,6 +17,5 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=		c pthread
 
 MODULES =		lang/go
-MODGO_MODULES =
 
 .include <bsd.port.mk>
