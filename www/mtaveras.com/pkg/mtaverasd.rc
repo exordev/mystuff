@@ -1,0 +1,13 @@
+#!/bin/ksh
+
+daemon="${TRUEPREFIX}/bin/mtaveras"
+daemon_flags="-port 3001"
+daemon_logger="daemon.info"
+daemon_user="_mtaveras"
+
+. /etc/rc.d/rc.subr
+
+rc_bg=YES
+rc_reload=NO
+
+rc_cmd $1
