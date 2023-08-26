@@ -1,0 +1,8 @@
+@newgroup _josegpt:3000
+@newuser _josegpt:3000:_josegpt:daemon:josegpt.com service:/var/db/josegpt:/sbin/nologin
+@rcscript ${RCDIR}/josegptd
+@bin bin/josegpt
+@mode 700
+@owner _josegpt
+@group _josegpt
+@sample /var/db/josegpt/
