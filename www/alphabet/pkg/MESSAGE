@@ -1,0 +1,8 @@
+remember to run:
+	# rcctl enable httpd relayd
+	# acme-client -vF josegpt.com mtaveras.com inventan.do
+add to crontab:
+	# crontab -e
+	# 0 0 * * * acme-client josegpt.com && rcctl reload httpd
+	# 0 0 * * * acme-client mtaveras.com && rcctl reload httpd
+	# 0 0 * * * acme-client inventan.do && rcctl reload httpd

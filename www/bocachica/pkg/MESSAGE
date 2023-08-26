@@ -1,8 +1,0 @@
-remember to run:
-	# rcctl enable httpd
-	# rcctl enable relayd
-	# acme-client -vF josegpt.com ptserver.org
-add to crontab:
-	# crontab -e
-	# 0 0 * * * acme-client josegpt.com && rcctl reload httpd
-	# 0 0 * * * acme-client ptserver.org && rcctl reload httpd
