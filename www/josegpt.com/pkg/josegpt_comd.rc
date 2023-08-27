@@ -1,8 +1,8 @@
 #!/bin/ksh
 
-daemon="${TRUEPREFIX}/bin/josegpt"
+daemon="${TRUEPREFIX}/bin/josegpt.com"
 daemon_logger="daemon.info"
-daemon_user="_josegpt"
+daemon_user="_josegpt.com"
 
 . /etc/rc.d/rc.subr
 

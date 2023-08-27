@@ -1,6 +1,6 @@
 COMMENT =		my personal site.
 
-V =			1.21.4
+V =			1.21.6
 MODGO_MODNAME =		git.sr.ht/~josegpt/josegpt.com
 MODGO_VERSION =		v${V}
 DISTNAME =		josegpt.com-${V}
