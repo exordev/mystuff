@@ -1,6 +1,6 @@
 COMMENT = 		configuration for my alphabet.
 
-V =			0.0.32
+V =			1.2.0
 DISTNAME =		alphabet-${V}
 REVISION =		0
 
