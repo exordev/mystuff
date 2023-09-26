@@ -1,14 +1,8 @@
-share/static/
-@sample ${LOCALSTATEDIR}/www/static/
-share/static/css/
-@sample ${LOCALSTATEDIR}/www/static/css/
-share/static/css/style.css
-@sample ${LOCALSTATEDIR}/www/static/css/style.css
-share/static/img/
-@sample ${LOCALSTATEDIR}/www/static/img/
-share/static/img/dr.ico
-@sample ${LOCALSTATEDIR}/www/static/img/dr.ico
-share/static/img/ej@500x500.png
-@sample ${LOCALSTATEDIR}/www/static/img/ej@500x500.png
-share/static/index.html
-@sample ${LOCALSTATEDIR}/www/static/index.html
+static/
+static/css/
+static/css/style.css
+static/img/
+static/img/dr.ico
+static/img/ej@500x500.png
+static/img/redhex.svg
+static/index.html
