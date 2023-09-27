@@ -1,8 +1,4 @@
-share/examples/alphabet/
-share/examples/alphabet/acme-client.conf
-@sample ${SYSCONFDIR}/acme-client.conf
-share/examples/alphabet/httpd.conf
-@sample ${SYSCONFDIR}/httpd.conf
-share/examples/alphabet/relayd.conf
+acme-client.conf
+httpd.conf
 @mode 600
-@sample ${SYSCONFDIR}/relayd.conf
+relayd.conf

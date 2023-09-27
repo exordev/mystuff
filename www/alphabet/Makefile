@@ -1,8 +1,9 @@
 COMMENT = 		configuration for my alphabet.
 
-V =			1.2.0
-DISTNAME =		alphabet-${V}
-REVISION =		0
+V =			1.3.0
+DISTNAME =		alphabet-v${V}
+PKGNAME =		alphabet-${V}
+REVISION =		1
 
 CATEGORIES =		www
 
@@ -18,10 +19,6 @@ DISTFILES =		alphabet-{alphabet/archive/v}${V}${EXTRACT_SUFX}
 NO_BUILD =		Yes
 NO_TEST =		Yes
 
-WRKSRC =		${WRKDIR}/alphabet-v${V}
-
-do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/alphabet
-	${INSTALL_DATA}	${WRKSRC}/{httpd,relayd,acme-client}.conf ${PREFIX}/share/examples/alphabet
+PREFIX =		${SYSCONFDIR}
 
 .include <bsd.port.mk>
