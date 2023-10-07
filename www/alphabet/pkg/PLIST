@@ -1,3 +1,4 @@
+@group wheel
 acme-client.conf
 httpd.conf
 @mode 600

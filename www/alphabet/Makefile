@@ -1,6 +1,6 @@
 COMMENT = 		configuration for my alphabet.
 
-V =			1.3.0
+V =			1.3.1
 DISTNAME =		alphabet-v${V}
 PKGNAME =		alphabet-${V}
 REVISION =		1
