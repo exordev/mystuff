@@ -1,3 +1,4 @@
+@group daemon
 static/
 static/css/
 static/css/style.css

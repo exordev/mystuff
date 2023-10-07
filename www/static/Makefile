@@ -1,6 +1,6 @@
 COMMENT = 		static files for all my services.
 
-V =			1.5.2
+V =			1.6.0
 DISTNAME =		static-v${V}
 PKGNAME =		static-${V}
 REVISION =		0
