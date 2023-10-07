@@ -1,5 +1,7 @@
 SHA256 (go_modules/git.sr.ht/~josegpt/sanitize/@v/v1.0.1.mod) = C5IARhRPN1YkbDe2Tk7pAl/Cd13SbTj6vXKLbmOtyUI=
 SHA256 (go_modules/git.sr.ht/~josegpt/sanitize/@v/v1.0.1.zip) = alfbdQTV4Mk2HZuss9ENskrIgewCZgCtO0Ov1ESjEZ4=
+SHA256 (go_modules/git.sr.ht/~josegpt/sqlx/@v/v1.0.0.mod) = FRhlNTrikR4aXBRnTUqkwKJrjColTRdH7THHdiwkohM=
+SHA256 (go_modules/git.sr.ht/~josegpt/sqlx/@v/v1.0.0.zip) = ctk70KE9UyViCveU3fIr6waLVi2uPLrn6OiZ+RuNEY8=
 SHA256 (go_modules/git.sr.ht/~josegpt/template/@v/v1.0.1.mod) = /ircxowuB46sFxD0ku8Cutf9RSzkrRZJ4LbCgkV+8y8=
 SHA256 (go_modules/git.sr.ht/~josegpt/template/@v/v1.0.1.zip) = mlJRYj3j030gberVRvHfScEzruzTI9D4Txd0CVD/kBE=
 SHA256 (go_modules/github.com/google/uuid/@v/v1.3.0.mod) = c9pHtjOLAKCC/UUao1oyc9OtwJuOm7qY2rAQkeQCr24=
@@ -8,9 +10,11 @@ SHA256 (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.17.mod) = tmtIYA14NsYZ0A
 SHA256 (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.17.zip) = ZqQq71C24XFHOKrQUMceJURE+MqFStPgWX5dKpHwFQ0=
 SHA256 (go_modules/golang.org/x/sync/@v/v0.3.0.mod) = 7Q/wxQgadUz8vnaMvPYMY5dbNddufXuZxayb+m2YKFE=
 SHA256 (go_modules/golang.org/x/sync/@v/v0.3.0.zip) = GHDnoZb3EZ1Mbtun3pzfxJ7hPIy3kh86lHVoFxxhUuA=
-SHA256 (josegpt.com-1.21.6.zip) = x6f+eBOJDYu8jvTHEB9QAhxRMy9qJVwHgpxLQ0dbgIQ=
+SHA256 (josegpt.com-1.21.12.zip) = KcNz/U9AaiM1tKDNDpYupeUxGaqpb5jPb65wnztNNaY=
 SIZE (go_modules/git.sr.ht/~josegpt/sanitize/@v/v1.0.1.mod) = 44
 SIZE (go_modules/git.sr.ht/~josegpt/sanitize/@v/v1.0.1.zip) = 17435
+SIZE (go_modules/git.sr.ht/~josegpt/sqlx/@v/v1.0.0.mod) = 40
+SIZE (go_modules/git.sr.ht/~josegpt/sqlx/@v/v1.0.0.zip) = 16518
 SIZE (go_modules/git.sr.ht/~josegpt/template/@v/v1.0.1.mod) = 44
 SIZE (go_modules/git.sr.ht/~josegpt/template/@v/v1.0.1.zip) = 16107
 SIZE (go_modules/github.com/google/uuid/@v/v1.3.0.mod) = 30
@@ -19,4 +23,4 @@ SIZE (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.17.mod) = 146
 SIZE (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.17.zip) = 2599934
 SIZE (go_modules/golang.org/x/sync/@v/v0.3.0.mod) = 34
 SIZE (go_modules/golang.org/x/sync/@v/v0.3.0.zip) = 29766
-SIZE (josegpt.com-1.21.6.zip) = 54162
+SIZE (josegpt.com-1.21.12.zip) = 51707

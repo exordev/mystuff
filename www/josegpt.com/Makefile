@@ -1,6 +1,6 @@
 COMMENT =		my personal site.
 
-V =			1.21.6
+V =			1.21.12
 MODGO_MODNAME =		git.sr.ht/~josegpt/josegpt.com
 MODGO_VERSION =		v${V}
 DISTNAME =		josegpt.com-${V}
@@ -18,6 +18,7 @@ WANTLIB =		c pthread
 
 MODULES =		lang/go
 MODGO_MODULES =		git.sr.ht/~josegpt/sanitize		v1.0.1		\
+			git.sr.ht/~josegpt/sqlx			v1.0.0		\
 			git.sr.ht/~josegpt/template		v1.0.1		\
 			github.com/google/uuid			v1.3.0		\
 			github.com/mattn/go-sqlite3		v1.14.17	\
