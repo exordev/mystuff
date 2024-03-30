@@ -1,4 +1,0 @@
-@newgroup _mtaveras:3001
-@newuser _mtaveras:3001:_mtaveras:daemon:mtaveras service:/nonexistent:/sbin/nologin
-@rcscript ${RCDIR}/mtaverasd
-@bin bin/mtaveras
