@@ -1,0 +1,5 @@
+@mode 500
+@owner www
+@group www
+@bin cgi-bin/publicaddr
+@bin cgi-bin/usage
