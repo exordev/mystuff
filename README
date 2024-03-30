@@ -1,24 +1,12 @@
 mystuff
 =======
-	OpenBSD ports.
+	my personal OpenBSD ports.
 
 usage
 -----
 	* create /etc/mk.conf with the following options:
 		- SUDO=doas
-		- PORTS_PRIVSEP=Yes
+		- PORTS_PRIVSEP=YES
 	* clone ports under /usr
 	* go to /usr/ports and run:
 		- doas make fix-permissions
-	* add users to the end of /usr/ports/infrastructure/db/user.list
-		- 3000 _account		_account		www/account
-		- 3001 _broker		_broker			www/broker
-		- 3002 _status		_status			www/status
-		- 3003 _rss			_rss			www/rss
-		- 3004 _ledger		_ledger			www/ledger
-		- 3005 _warehouse	_warehouse		www/warehouse
-		- 3006 _library		_library		www/library
-		- 3007 _josegpt		_josegpt		www/josegpt
-		- 3008 _vc			_vc				www/vc
-		- 3009 _mtaveras	_mtaveras		www/mtaveras
-		- 3010 _emilsagomez	_emilsagomez	www/emilsagomez
