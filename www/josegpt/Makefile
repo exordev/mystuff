@@ -2,7 +2,7 @@ COMMENT= 		my personal website.
 
 GH_PROJECT=		josegpt
 GH_ACCOUNT=		josegpt
-GH_TAGNAME=		0.5
+GH_TAGNAME=		0.6
 REVISION=		0
 
 CATEGORIES=		www
