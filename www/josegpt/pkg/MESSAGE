@@ -1,2 +1,2 @@
 add to crontab:
-*/5 * * * * ftp -V -o $HOME/cache/projects.json https://api.github.com/users/josegpt/repos?sort=updated
+0 * * * * ftp -V -o $HOME/cache/projects.json https://api.github.com/users/josegpt/repos?sort=updated
