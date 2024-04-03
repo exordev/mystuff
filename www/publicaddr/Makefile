@@ -2,7 +2,7 @@ COMMENT= 		publicaddr.net
 
 GH_PROJECT=		publicaddr
 GH_ACCOUNT=		josegpt
-GH_TAGNAME=		0.1
+GH_TAGNAME=		0.2
 REVISION=		0
 
 CATEGORIES=		www
