@@ -2,7 +2,7 @@ COMMENT= 	httpd config.
 
 GH_PROJECT=	httpd.conf
 GH_ACCOUNT=	josegpt
-GH_TAGNAME=	0.1
+GH_TAGNAME=	0.2
 REVISION=	0
 
 CATEGORIES=	www
@@ -12,8 +12,8 @@ MAINTAINER=	Jose G Perez Taveras <josegpt27@gmail.com>
 # ISC
 PERMIT_PACKAGE=	Yes
 
-NO_BUILD=		Yes
-NO_TEST=		Yes
+NO_BUILD=	Yes
+NO_TEST=	Yes
 
 PREFIX=		${SYSCONFDIR}
 
