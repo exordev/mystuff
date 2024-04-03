@@ -10,3 +10,7 @@ usage
 	* clone ports under /usr
 	* go to /usr/ports and run:
 		- doas make fix-permissions
+
+license
+-------
+	isc
