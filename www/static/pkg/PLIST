@@ -1,9 +1,9 @@
 @group daemon
-static/
-static/css/
-static/css/style.css
-static/img/
-static/img/dr.ico
-static/img/ej@500x500.png
-static/img/redhex.svg
-static/index.html
+htdocs/static/
+htdocs/static/css/
+htdocs/static/css/style.css
+htdocs/static/err.html
+htdocs/static/img/
+htdocs/static/img/banner.png
+htdocs/static/img/favicon.svg
+htdocs/static/index.html

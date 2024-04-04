@@ -1,24 +1,19 @@
-COMMENT = 		static files for all my services.
+COMMENT= 		static files.
 
-V =			1.6.1
-DISTNAME =		static-v${V}
-PKGNAME =		static-${V}
-REVISION =		0
+GH_PROJECT=		static
+GH_ACCOUNT=		josegpt
+GH_TAGNAME=		0.2
+REVISION=		0
 
-CATEGORIES =		www
-
-HOMEPAGE =		https://git.sr.ht/~josegpt/static
-
+CATEGORIES=		www
+HOMEPAGE =		https://static.redhex.dev
 MAINTAINER =		Jose G Perez Taveras <josegpt27@gmail.com>
 
-# GPL-3.0-or-later
+# ISC
 PERMIT_PACKAGE =	Yes
-MASTER_SITES =		https://git.sr.ht/~josegpt/
-DISTFILES =		static-{static/archive/v}${V}${EXTRACT_SUFX}
-
-PREFIX =		${VARBASE}/www
 
 NO_BUILD = 		Yes
 NO_TEST =		Yes
+PREFIX =		${VARBASE}/www
 
 .include <bsd.port.mk>
