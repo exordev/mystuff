@@ -1,9 +1,8 @@
 @group daemon
-htdocs/static/
-htdocs/static/css/
-htdocs/static/css/style.css
-htdocs/static/err.html
-htdocs/static/img/
-htdocs/static/img/banner.png
-htdocs/static/img/favicon.svg
-htdocs/static/index.html
+htdocs/css/
+htdocs/css/style.css
+htdocs/err.html
+htdocs/img/
+htdocs/img/banner.png
+htdocs/img/favicon.svg
+htdocs/index.html
