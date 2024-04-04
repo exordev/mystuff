@@ -2,7 +2,7 @@ COMMENT= 	acme-client config.
 
 GH_PROJECT=	acme-client.conf
 GH_ACCOUNT=	josegpt
-GH_TAGNAME=	0.1
+GH_TAGNAME=	0.2
 REVISION=	0
 
 CATEGORIES=	www
