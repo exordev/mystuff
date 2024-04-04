@@ -2,14 +2,3 @@
 @owner www
 @group www
 @bin cgi-bin/josegpt
-@mode
-@owner
-@group
-htdocs/josegpt/
-htdocs/josegpt/static/
-htdocs/josegpt/static/css/
-htdocs/josegpt/static/css/style.css
-htdocs/josegpt/static/img/
-htdocs/josegpt/static/img/banner.png
-htdocs/josegpt/static/img/favicon.ico
-htdocs/josegpt/static/img/logo.svg

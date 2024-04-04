@@ -2,7 +2,7 @@ COMMENT= 		my personal website.
 
 GH_PROJECT=		josegpt
 GH_ACCOUNT=		josegpt
-GH_TAGNAME=		0.18
+GH_TAGNAME=		0.19
 REVISION=		0
 
 CATEGORIES=		www
@@ -14,6 +14,7 @@ PERMIT_PACKAGE=		Yes
 
 # uses pledge()
 BUILD_DEPENDS=		devel/json-c
+RUN_DEPENDS=		www/static
 
 NO_TEST=		Yes
 PREFIX=			${VARBASE}/www
