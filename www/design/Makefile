@@ -2,7 +2,7 @@ COMMENT= 		design static files.
 
 GH_PROJECT=		design
 GH_ACCOUNT=		josegpt
-GH_TAGNAME=		0.8
+GH_TAGNAME=		0.9
 REVISION=		0
 
 CATEGORIES=		www
