@@ -1,12 +1,12 @@
-COMMENT= 		static files.
+COMMENT= 		design static files.
 
-GH_PROJECT=		static
+GH_PROJECT=		design
 GH_ACCOUNT=		josegpt
-GH_TAGNAME=		0.7
+GH_TAGNAME=		0.8
 REVISION=		0
 
 CATEGORIES=		www
-HOMEPAGE =		https://static.redhex.dev
+HOMEPAGE =		https://design.redhex.dev
 MAINTAINER =		Jose G Perez Taveras <josegpt27@gmail.com>
 
 # ISC
