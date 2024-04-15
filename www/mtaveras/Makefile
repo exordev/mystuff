@@ -2,7 +2,7 @@ COMMENT= 		mtaveras static files.
 
 GH_PROJECT=		mtaveras
 GH_ACCOUNT=		josegpt
-GH_TAGNAME=		0.1
+GH_TAGNAME=		0.2
 REVISION=		0
 
 CATEGORIES=		www
