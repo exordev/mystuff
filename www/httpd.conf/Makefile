@@ -2,7 +2,7 @@ COMMENT= 	httpd config.
 
 GH_PROJECT=	httpd.conf
 GH_ACCOUNT=	josegpt
-GH_TAGNAME=	0.5
+GH_TAGNAME=	0.6
 REVISION=	0
 
 CATEGORIES=	www
