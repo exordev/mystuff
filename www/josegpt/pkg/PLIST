@@ -1,4 +1,3 @@
-@mode 500
-@owner www
-@group www
-@bin cgi-bin/josegpt
+@group daemon
+htdocs/josegpt/
+htdocs/josegpt/index.html
