@@ -1,9 +1,0 @@
-@group daemon
-htdocs/err.html
-htdocs/index.html
-htdocs/static/
-htdocs/static/css/
-htdocs/static/css/style.css
-htdocs/static/img/
-htdocs/static/img/banner.png
-htdocs/static/img/logo.svg
