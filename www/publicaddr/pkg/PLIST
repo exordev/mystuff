@@ -1,0 +1,4 @@
+@mode 500
+@owner www
+@group www
+@bin www/cgi-bin/publicaddr
