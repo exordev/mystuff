@@ -1,12 +1,13 @@
 mystuff
 =======
-	my personal OpenBSD ports.
+	OpenBSD ports.
 
 usage
 -----
 	* create /etc/mk.conf with the following options:
 		- SUDO=doas
 		- PORTS_PRIVSEP=YES
+		- USE_SYSTRACE=YES
 	* clone ports under /usr
 	* go to /usr/ports and run:
 		- doas make fix-permissions
