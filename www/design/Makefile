@@ -2,7 +2,7 @@ COMMENT=		static files.
 
 GH_PROJECT=		design
 GH_ACCOUNT=		exordev
-GH_TAGNAME=		0.19
+GH_TAGNAME=		0.21
 REVISION=		0
 
 CATEGORIES=		www
