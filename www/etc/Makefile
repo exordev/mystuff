@@ -2,7 +2,7 @@ COMMENT=		etc.
 
 GH_PROJECT=		etc
 GH_ACCOUNT=		exordev
-GH_TAGNAME=		0.1
+GH_TAGNAME=		0.2
 REVISION=		0
 
 CATEGORIES=		www
